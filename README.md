@@ -17,39 +17,37 @@ Para instalar las bibliotecas se puede usar el siguiente comando:
 ```bash
 pip install pandas numpy scipy matplotlib seaborn
 python nba_analysis.py
+```
 
-- Escribe una sección que muestre algunos resultados o gráficos que hayas obtenido con tu análisis. Puedes usar imágenes o tablas para ilustrar tus hallazgos. Por ejemplo:
-
-```markdown
 ## Resultados
 
 Algunos de los resultados obtenidos con el análisis son:
 
-- La diferencia de medias entre los puntos anotados por los equipos Knicks y Nets en la temporada 2010 fue de 7.56 puntos a favor de los Knicks.
+- La diferencia de medias entre los puntos anotados por los equipos Knicks y Nets en la temporada 2010 fue de 9.73 puntos a favor de los Knicks.
 - La distribución de los puntos anotados por ambos equipos en la temporada 2010 se muestra en el siguiente histograma:
 
 ![Histograma 2010]
 
-- La diferencia de medias entre los puntos anotados por los equipos Knicks y Nets en la temporada 2014 fue de -2.05 puntos a favor de los Nets.
+- La diferencia de medias entre los puntos anotados por los equipos Knicks y Nets en la temporada 2014 fue de 0.45 puntos a favor de los Knicks.
 - La distribución de los puntos anotados por ambos equipos en la temporada 2014 se muestra en el siguiente histograma:
 
-![Histograma 2014](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+![Histograma 2014]
 
 - El diagrama de caja que compara los puntos anotados por todos los equipos en la temporada 2010 se muestra a continuación:
 
-![Diagrama de caja](https://www.udacity.com/course/writing-readmes--ud777)
+![Diagrama de caja]
 
 - La tabla de contingencia que muestra la frecuencia del resultado del partido (ganar o perder) según la ubicación del mismo (local o visitante) es la siguiente:
 
-| game_result | game_location | Frecuencia |
-| ----------- | ------------- | ---------- |
-| L           | A             | 529        |
-| L           | H             | 370        |
-| W           | A             | 370        |
-| W           | H             | 529        |
+| game_result | A      | H      |
+| ----------- | ------ | ------ |
+| L           | 133    | 105    |
+| W           | 92     | 120    |
 
-- La prueba chi-cuadrado indica que hay una asociación significativa entre el resultado del partido y la ubicación del mismo (chi2 = 59.31, p < 0.001).
-- La covarianza entre la diferencia de puntos y el pronóstico de victoria es -0.01 y la correlación es -0.04, lo que
+
+- La prueba chi-cuadrado indica que hay una asociación significativa entre el resultado del partido y la ubicación del mismo (chi2 = 6.50, p < 0.001).
+- La correlación entre la diferencia de puntos y el pronóstico de victoria es 0.08, lo que indica una relación lineal positiva muy débil entre ambas variables.
+- La diferencia de puntos y el pronóstico de victoria tienen una correlación positiva moderada (r = 0.44), que es estadísticamente significativa (p < 0.001). Esto significa que cuando el pronóstico de victoria es alto, la diferencia de puntos suele ser alta también, y viceversa.
 - El diagrama de dispersión que muestra la relación entre la diferencia de puntos y el pronóstico de victoria se muestra a continuación:
 
 ## Contribución
